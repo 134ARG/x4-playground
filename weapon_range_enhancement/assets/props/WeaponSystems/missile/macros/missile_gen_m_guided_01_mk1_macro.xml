@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='missile_gen_m_guided_01_mk1_macro']/properties/missile/@lifetime">36</replace>
+  <replace sel="/macros/macro[@name='missile_gen_m_guided_01_mk1_macro']/properties/missile/@range">22400</replace>
+  <replace sel="/macros/macro[@name='missile_gen_m_guided_01_mk1_macro']/properties/lock/@range">22400</replace>
+</diff>

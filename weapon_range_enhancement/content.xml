@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="weapon_range_enhancement" name="Weapon Range Enhancement" description="Doubles vanilla and DLC weapon projectile range using incremental XML patches." author="Codex" version="100" date="2026-05-24" save="0">
+  <dependency id="ego_dlc_split" optional="true" name="Split Vendetta" />
+  <dependency id="ego_dlc_terran" optional="true" name="Cradle of Humanity" />
+  <dependency id="ego_dlc_pirate" optional="true" name="Tides of Avarice" />
+  <dependency id="ego_dlc_boron" optional="true" name="Kingdom End" />
+  <dependency id="ego_dlc_timelines" optional="true" name="Timelines" />
+  <dependency id="ego_dlc_mini_01" optional="true" name="Hyperion Pack" />
+  <dependency id="ego_dlc_mini_02" optional="true" name="Envoy Pack" />
+</content>

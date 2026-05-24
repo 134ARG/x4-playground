@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='bullet_spl_turret_l_mining_01_mk1_macro']/properties/bullet/@speed">9870</replace>
+  <replace sel="/macros/macro[@name='bullet_spl_turret_l_mining_01_mk1_macro']/properties/bullet/@lifetime">5.64</replace>
+  <replace sel="/macros/macro[@name='bullet_spl_turret_l_mining_01_mk1_macro']/properties/bullet/@range">14000</replace>
+</diff>

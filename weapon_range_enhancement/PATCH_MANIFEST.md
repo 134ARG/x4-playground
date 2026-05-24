@@ -1,0 +1,235 @@
+# Weapon Range Enhancement Patch Manifest
+
+- Generated patch files: 223
+- Bullet projectile macro files patched: 182
+- Light-speed bullet macro files patched with lifetime-only speed handling: 25
+- Missile macro files patched: 41
+- Attribute replacements: 483
+- Explicit projectile/missile range replacements: 96
+- Missile lock range replacements: 12
+- Negative/infinite values skipped: 9
+
+## Files
+- `assets/fx/weaponFx/macros/bullet_arg_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_arg_m_ion_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_arg_m_ion_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_arg_s_ion_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_arg_s_ion_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_arg_turret_l_beam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_arg_turret_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_arg_turret_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_arg_turret_l_plasma_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_beam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_m_beam_01_mk2_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_m_flak_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_gatling_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_gatling_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_laser_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_m_mining_01_mk2_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_m_plasma_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_plasma_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_scrapbeam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_m_shotgun_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_m_shotgun_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_beam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_s_beam_01_mk2_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_s_burst_01_mk1_macro.xml`: speed, range
+- `assets/fx/weaponFx/macros/bullet_gen_s_burst_01_mk2_macro.xml`: speed, range
+- `assets/fx/weaponFx/macros/bullet_gen_s_cannon_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_cannon_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_gatling_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_gatling_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_laser_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_s_mining_01_mk2_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_s_plasma_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_plasma_01_mk1_tutorial_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_plasma_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_shotgun_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_s_shotgun_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_turret_l_beam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_turret_l_gatling_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_turret_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_turret_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_turret_l_plasma_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_turret_l_shotgun_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_turret_m_beam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_turret_m_gatling_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_turret_m_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_turret_m_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_gen_turret_m_plasma_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_gen_turret_m_shotgun_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_kha_l_beam_02_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_kha_m_beam_01_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_kha_s_beam_01_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_kha_turret_l_beam_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_kha_turret_m_beam_01_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_kha_xl_beam_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_par_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_m_railgun_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_m_railgun_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_s_railgun_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_s_railgun_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_turret_l_beam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_par_turret_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_turret_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_par_turret_l_plasma_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_turret_l_railgun_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_turret_m_cannon_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_par_turret_m_railgun_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_spacesuit_laser_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_spacesuit_laser_02_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_spacesuit_repairlaser_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_tel_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_tel_m_charge_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_tel_m_charge_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_tel_s_charge_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_tel_s_charge_01_mk2_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_tel_turret_l_beam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_tel_turret_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_tel_turret_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_tel_turret_l_plasma_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_tel_turret_m_blaster_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_m_beam_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_xen_m_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_m_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_xen_s_gatling_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_s_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_turret_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_turret_l_laser_01_mk1_scenario_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_turret_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `assets/fx/weaponFx/macros/bullet_xen_turret_l_plasma_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_turret_l_plasma_01_mk1_story_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_turret_m_beam_01_mk1_macro.xml`: lifetime, range
+- `assets/fx/weaponFx/macros/bullet_xen_turret_m_gatling_01_mk1_macro.xml`: speed, lifetime
+- `assets/fx/weaponFx/macros/bullet_xen_turret_m_laser_01_mk1_macro.xml`: speed, lifetime
+- `assets/props/WeaponSystems/missile/macros/missile_cluster_heavy_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_cluster_light_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_dumbfire_heavy_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_dumbfire_heavy_mk2_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_dumbfire_light_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_dumbfire_light_mk2_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_emp_mk1_macro.xml`: lifetime, range, lock_range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_l_dumbfire_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_l_guided_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_l_torpedo_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_m_dumbfire_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_m_dumbfire_01_mk2_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_m_guided_01_mk1_macro.xml`: lifetime, range, lock_range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_m_smart_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_s_dumbfire_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_s_dumbfire_01_mk2_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_s_emp_01_mk1_macro.xml`: lifetime, range, lock_range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_s_guided_01_mk1_macro.xml`: lifetime, range, lock_range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_s_heatseeker_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_s_smart_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_s_swarm_01_mk1_macro.xml`: lifetime, range, lock_range
+- `assets/props/WeaponSystems/missile/macros/missile_gen_s_torpedo_01_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_guided_heavy_mk1_macro.xml`: lifetime, range, lock_range
+- `assets/props/WeaponSystems/missile/macros/missile_guided_light_mk1_macro.xml`: lifetime, range, lock_range
+- `assets/props/WeaponSystems/missile/macros/missile_heatseeker_heavy_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_heatseeker_light_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_smart_heavy_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_smart_light_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_swarm_heavy_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_swarm_light_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_torpedo_heavy_mk1_macro.xml`: lifetime, range
+- `assets/props/WeaponSystems/missile/macros/missile_torpedo_light_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_l_beam_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_m_flak_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_m_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_m_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_m_railgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_s_arc_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_s_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_s_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_s_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_turret_l_disruptor_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_turret_l_flak_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_turret_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_turret_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_turret_m_arc_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_turret_m_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_turret_m_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_boron/assets/fx/weaponfx/macros/bullet_bor_turret_m_railgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_mini_01/assets/fx/weaponfx/macros/bullet_par_l_laser_02_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_mini_02/assets/fx/weaponfx/macros/bullet_gen_m_disabler_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_mini_02/assets/fx/weaponfx/macros/bullet_gen_m_shieldpierce_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_mini_02/assets/fx/weaponfx/macros/bullet_gen_turret_m_disabler_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_mini_02/assets/fx/weaponfx/macros/bullet_gen_turret_m_gatling_02_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_mini_02/assets/fx/weaponfx/macros/bullet_gen_turret_m_shieldpierce_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_pirate/assets/fx/weaponfx/macros/bullet_gen_m_yacht_beam_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_pirate/assets/fx/weaponfx/macros/bullet_gen_m_yacht_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_pirate/assets/fx/weaponfx/macros/bullet_pir_turret_l_battleship_01_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_pirate/assets/fx/weaponfx/macros/bullet_pir_turret_m_battleship_01_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_pirate/assets/fx/weaponfx/macros/bullet_pir_xl_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_flak_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_gatling_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_railgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_railgun_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_shotgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_shotgun_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_sticky_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_m_sticky_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_s_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_s_gatling_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_s_railgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_s_railgun_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_s_shotgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_s_shotgun_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_s_sticky_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_s_sticky_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_turret_l_beam_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_turret_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_turret_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_turret_l_plasma_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_turret_l_railgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_turret_m_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_turret_m_railgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/fx/weaponfx/macros/bullet_spl_turret_m_shotgun_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_split/assets/props/WeaponSystems/missile/macros/missile_disruptor_light_mk1_macro.xml`: lifetime, range, lock_range
+- `extensions/ego_dlc_split/assets/props/WeaponSystems/missile/macros/missile_gen_s_disruptor_01_mk1_macro.xml`: lifetime, range, lock_range
+- `extensions/ego_dlc_split/assets/props/WeaponSystems/missile/macros/missile_gen_s_interceptor_01_mk1_macro.xml`: lifetime, range, lock_range
+- `extensions/ego_dlc_split/assets/props/WeaponSystems/missile/macros/missile_interceptor_light_mk1_macro.xml`: lifetime, range, lock_range
+- `extensions/ego_dlc_split/assets/props/WeaponSystems/missile/macros/missile_scatter_heavy_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_split/assets/props/WeaponSystems/missile/macros/missile_starburst_heavy_mk1_macro.xml`: lifetime, range, lock_range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_atf_xl_beam_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_gen_turret_m_laser_story_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_l_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_m_beam_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_m_beam_01_mk2_macro.xml`: lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_m_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_m_gatling_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_m_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_m_laser_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_s_beam_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_s_beam_01_mk2_macro.xml`: lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_s_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_s_gatling_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_s_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_s_laser_01_mk2_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_turret_l_beam_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_turret_l_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_turret_l_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_turret_l_mining_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_turret_m_beam_01_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_turret_m_gatling_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_turret_m_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_terran/assets/fx/weaponfx/macros/bullet_ter_turret_s_laser_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_timelines/assets/fx/weaponfx/macros/bullet_spacesuit_laser_03_mk1_macro.xml`: range
+- `extensions/ego_dlc_timelines/assets/fx/weaponfx/macros/bullet_ter_m_laser_02_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_timelines/assets/fx/weaponfx/macros/bullet_ter_s_laser_02_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_timelines/assets/fx/weaponfx/macros/bullet_ter_s_plasma_01_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_timelines/assets/fx/weaponfx/macros/bullet_ter_turret_m_laser_02_mk1_macro.xml`: speed, lifetime
+- `extensions/ego_dlc_timelines/assets/fx/weaponfx/macros/bullet_xen_turret_xl_beam_01_mk1_macro.xml`: speed, lifetime, range
+- `extensions/ego_dlc_timelines/assets/props/weaponsystems/missile/macros/missile_flagship_heavy_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_timelines/assets/props/weaponsystems/missile/macros/missile_flagship_light_mk1_macro.xml`: lifetime, range
+- `extensions/ego_dlc_timelines/assets/props/weaponsystems/missile/macros/missile_story_dumbfire_light_mk2_macro.xml`: range

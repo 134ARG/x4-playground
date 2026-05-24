@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='bullet_ter_turret_l_beam_01_mk1_macro']/properties/bullet/@lifetime">3.2</replace>
+  <replace sel="/macros/macro[@name='bullet_ter_turret_l_beam_01_mk1_macro']/properties/bullet/@range">22800</replace>
+</diff>

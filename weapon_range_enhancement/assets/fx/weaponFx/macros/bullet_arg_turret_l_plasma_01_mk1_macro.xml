@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='bullet_arg_turret_l_plasma_01_mk1_macro']/properties/bullet/@speed">846</replace>
+  <replace sel="/macros/macro[@name='bullet_arg_turret_l_plasma_01_mk1_macro']/properties/bullet/@lifetime">16.92</replace>
+</diff>

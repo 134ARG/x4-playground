@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='bullet_spacesuit_laser_03_mk1_macro']/properties/bullet/@range">1000</replace>
+</diff>

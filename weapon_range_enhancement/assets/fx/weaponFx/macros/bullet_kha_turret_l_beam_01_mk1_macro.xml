@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='bullet_kha_turret_l_beam_01_mk1_macro']/properties/bullet/@speed">22560</replace>
+  <replace sel="/macros/macro[@name='bullet_kha_turret_l_beam_01_mk1_macro']/properties/bullet/@lifetime">2.115</replace>
+  <replace sel="/macros/macro[@name='bullet_kha_turret_l_beam_01_mk1_macro']/properties/bullet/@range">16800</replace>
+</diff>
