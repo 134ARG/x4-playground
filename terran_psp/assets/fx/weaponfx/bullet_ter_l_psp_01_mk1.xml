@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<components>
+  <component name="bullet_ter_l_psp_01_mk1" class="bullet">
+    <source geometry="extensions\terran_psp\assets\fx\weaponfx\bullet_ter_l_psp_01_mk1_data" />
+    <layers>
+      <layer>
+        <lights>
+          <box name="psp_lance_light" shadow="0" r="235" g="248" b="255" lighteffect="1" trigger="1" intensity="1.8" specularintensity="1">
+            <size x="280" y="34" z="34" />
+            <offset>
+              <position x="0" y="0" z="92" />
+              <quaternion qx="0" qy="0.7071068" qz="0" qw="-0.7071067" />
+            </offset>
+          </box>
+          <omni name="psp_lance_head_glow" shadow="0" r="96" g="190" b="255" intensity="0.8" specularintensity="1" range="240" shadowrange="240" lighteffect="1" trigger="0">
+            <offset>
+              <position x="0" y="0" z="96" />
+            </offset>
+          </omni>
+          <omni name="psp_singularity_lens_light" shadow="0" r="170" g="230" b="255" intensity="5" specularintensity="1" range="650" shadowrange="650" lighteffect="1" lenseffect="signal_lens" trigger="1">
+            <offset>
+              <position x="0" y="0" z="132" />
+            </offset>
+          </omni>
+        </lights>
+      </layer>
+    </layers>
+    <connections>
+      <connection name="container" tags="contents" value="0" />
+      <connection name="position" tags="position" value="1" />
+      <connection name="space" tags="bullet">
+        <offset />
+      </connection>
+      <connection name="Connection01" tags="part animation  ">
+        <offset>
+          <position x="0" y="0.01700214" z="210" />
+        </offset>
+        <animations>
+          <animation name="loop" start="1" end="100" />
+        </animations>
+        <parts>
+          <part name="part_bullet">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p1effects.psp_singularity_core" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="12" y="12" z="330" />
+              <center x="0" y="0" z="-123.5852" />
+            </size>
+            <size_raw>
+              <max x="12" y="12" z="330" />
+              <center x="0.02432442" y="-0.02612689" z="-123.5852" />
+            </size_raw>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection02" tags="part iklink animation textureanimation  " parent="part_bullet">
+        <animations>
+          <animation name="loop" start="1" end="50" />
+        </animations>
+        <parts>
+          <part name="part_shockwave">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p1effects.psp_singularity_shockwave" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="30" y="30" z="260" />
+              <center x="0" y="0" z="-50.83426" />
+            </size>
+            <size_raw>
+              <max x="30" y="30" z="260" />
+              <center x="0.02111244" y="0.02878663" z="-50.83426" />
+            </size_raw>
+            <uv_animations>
+              <uv_animation mapchannel="3">
+                <uv_property name="v_offset" controller="linear_float">
+                  <key frame="0" value="0" />
+                  <key frame="50" value="-2" />
+                </uv_property>
+              </uv_animation>
+              <uv_animation mapchannel="2">
+                <uv_property name="v_offset" controller="linear_float">
+                  <key frame="0" value="0" />
+                  <key frame="50" value="4" />
+                </uv_property>
+              </uv_animation>
+            </uv_animations>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection03" tags="part nocollision noshadowcaster  ">
+        <offset>
+          <position x="0" y="0" z="132" />
+        </offset>
+        <parts>
+          <part name="distortionbubble1">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p1effects.psp_hw_warpbubble" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="103.2528" y="103.2528" z="103.2528" />
+              <center x="0" y="2.288818E-05" z="0" />
+            </size>
+            <pivot>
+              <offset>
+                <position x="0" y="-50" z="0" />
+              </offset>
+            </pivot>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection05" tags="animation part nocollision noshadowcaster  ">
+        <offset>
+          <position x="0" y="0" z="132" />
+        </offset>
+        <animations>
+          <animation name="playonce" start="1" end="15" />
+        </animations>
+        <parts>
+          <part name="distortionsphere">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p1effects.psp_distortion_sphere" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="260" y="260" z="260" />
+              <center x="1.52588e-05" y="0" z="0" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection04" tags="animation part nocollision  ">
+        <offset>
+          <position x="0" y="0" z="132" />
+        </offset>
+        <animations>
+          <animation name="playonce" start="1" end="15" />
+        </animations>
+        <parts>
+          <part name="distortionsphere">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p1effects.psp_singularity_lens_glow" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="460" y="460" z="460" />
+              <center x="1.52588e-05" y="0" z="0" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection06" tags="part nocollision noshadowcaster  ">
+        <offset>
+          <position x="0" y="0" z="132" />
+          <quaternion qx="0.7071068" qy="0" qz="0" qw="0.7071068" />
+        </offset>
+        <parts>
+          <part name="distortiondisc1">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p1effects.psp_hw_warpdisc_distortion" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="108.0476" y="8.71318E-05" z="108.0476" />
+              <center x="0" y="8.157367E-06" z="0" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection_Laser01" tags="laser">
+        <offset>
+          <position x="0" y="0" z="0" />
+        </offset>
+      </connection>
+    </connections>
+  </component>
+</components>

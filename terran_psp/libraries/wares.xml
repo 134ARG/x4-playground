@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/wares">
+    <ware id="turret_ter_l_psp_01_mk1" name="{20105,9901}" description="{20105,9902}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+      <price min="4500000" average="5000000" max="5500000" />
+      <production time="60" amount="1" method="default" name="{20206,901}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="240" />
+          <ware ware="energycells" amount="9000" />
+          <ware ware="metallicmicrolattice" amount="2600" />
+          <ware ware="siliconcarbide" amount="360" />
+        </primary>
+      </production>
+      <component ref="turret_ter_l_psp_01_mk1_macro" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0" factions="player" />
+      <owner faction="pioneers" />
+      <owner faction="terran" />
+    </ware>
+  </add>
+</diff>

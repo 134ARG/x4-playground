@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/materiallibrary/collection[@name='p1effects']" pos="prepend">
+      <material name="psp_singularity_core" shader="p1_complex_unlit" blendmode="ADDITIVE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="assets\fx\textures\bullets_fx_master" />
+          <property type="BitMap" name="diffuse2_map" value="assets\textures\fx\fx_p2_gradient_colour_01_diff" />
+          <property type="Float" name="diffuseStr" value="3.8" />
+          <property type="Float" name="diffuse2Str" value="0.7" />
+          <property type="Integer" name="dblend1" value="5" />
+          <property type="Color" name="color_emissive" r="245" g="252" b="255" a="255" value="(color 245 252 255)" />
+          <property type="Float" name="base_hue_shift" value="0.0" />
+          <property type="Float" name="base_saturation_shift" value="0.2" />
+          <property type="Float" name="base_brightness_shift" value="1.12" />
+          <property type="Float" name="angle_fade" value="0.0" />
+          <property type="Float" name="angle_fade_speed" value="0.0" />
+          <property type="Float" name="angle_fade_offset" value="0.0" />
+          <property type="Float" name="softparticle_range_min" value="0.0" />
+          <property type="Float" name="softparticle_range_max" value="0.1" />
+          <property type="Float" name="alpha1Str" value="1.0" />
+          <property type="Float" name="alpha2Str" value="1.0" />
+          <property type="Float" name="camera_fade_range_near_start" value="0.0" />
+          <property type="Float" name="camera_fade_range_near_end" value="10.0" />
+          <property type="Float" name="camera_fade_range_far_start" value="100000.0" />
+          <property type="Float" name="camera_fade_range_far_end" value="120000.0" />
+        </properties>
+      </material>
+      <material name="psp_singularity_shockwave" shader="p1_complex_unlit" blendmode="ADDITIVE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="assets\fx\textures\bullets_fx_master" />
+          <property type="BitMap" name="diffuse2_map" value="assets\textures\fx\missile_booster_01_diff" />
+          <property type="BitMap" name="diffuse3_map" value="assets\textures\fx\missile_booster_01_diff" />
+          <property type="Float" name="diffuseStr" value="1.2" />
+          <property type="Float" name="diffuse2Str" value="0.6" />
+          <property type="Float" name="diffuse3Str" value="0.8" />
+          <property type="Integer" name="dblend1" value="5" />
+          <property type="Integer" name="dblend2" value="5" />
+          <property type="Color" name="color_emissive" r="96" g="190" b="255" a="255" value="(color 96 190 255)" />
+          <property type="Float" name="base_hue_shift" value="0.0" />
+          <property type="Float" name="base_saturation_shift" value="0.3" />
+          <property type="Float" name="base_brightness_shift" value="0.78" />
+          <property type="Float" name="angle_fade" value="0.0" />
+          <property type="Float" name="angle_fade_speed" value="1.0" />
+          <property type="Float" name="angle_fade_offset" value="0.0" />
+          <property type="Float" name="softparticle_range_min" value="0.0" />
+          <property type="Float" name="softparticle_range_max" value="0.1" />
+          <property type="Float" name="alpha1Str" value="1.0" />
+          <property type="Float" name="alpha2Str" value="1.0" />
+          <property type="Float" name="alpha3Str" value="1.0" />
+          <property type="Float" name="camera_fade_range_near_start" value="0.0" />
+          <property type="Float" name="camera_fade_range_near_end" value="1.0" />
+          <property type="Float" name="camera_fade_range_far_start" value="100000.0" />
+          <property type="Float" name="camera_fade_range_far_end" value="120000.0" />
+        </properties>
+      </material>
+      <material name="psp_distortion_heavy" shader="xu_distortion" blendmode="DISTORTION" preview="none" priority="1">
+        <properties>
+          <property type="BitMap" name="normal_map" value="assets\textures\fx\bullet_distortion_01_normal" />
+          <property type="BitMap" name="mask_map" value="assets\textures\fx\bullet_distortion_01_mask_diff" />
+          <property type="Float" name="mat_strength" value="-5.5" />
+          <property type="Float" name="camera_fade_range_near_start" value="0.0" />
+          <property type="Float" name="camera_fade_range_near_end" value="8.0" />
+          <property type="Float" name="mat_mode" value="0.0" />
+          <property type="Float" name="angle_fade_speed" value="0.1" />
+          <property type="Float" name="angle_fade_offset" value="0.0" />
+        </properties>
+      </material>
+      <material name="psp_distortion_sphere" shader="xu_distortion" blendmode="DISTORTION" preview="none">
+        <properties>
+          <property type="Float" name="mat_strength" value="120.0" />
+          <property type="Float" name="camera_fade_range_near_start" value="0.5" />
+          <property type="Float" name="camera_fade_range_near_end" value="18.0" />
+          <property type="Float" name="mat_mode" value="0.0" />
+          <property type="Float" name="angle_fade_speed" value="-0.5" />
+          <property type="Float" name="angle_fade_offset" value="1.0" />
+        </properties>
+      </material>
+      <material name="psp_distortion_core" shader="xu_distortion" blendmode="DISTORTION" preview="none" priority="1">
+        <properties>
+          <property type="BitMap" name="normal_map" value="assets\textures\fx\bullet_distortion_01_normal" />
+          <property type="BitMap" name="mask_map" value="assets\textures\fx\bullet_distortion_01_mask_diff" />
+          <property type="Float" name="mat_strength" value="-14.0" />
+          <property type="Float" name="camera_fade_range_near_start" value="0.5" />
+          <property type="Float" name="camera_fade_range_near_end" value="18.0" />
+          <property type="Float" name="mat_mode" value="0.0" />
+          <property type="Float" name="angle_fade_speed" value="0.05" />
+          <property type="Float" name="angle_fade_offset" value="0.0" />
+        </properties>
+      </material>
+      <material name="psp_hw_warpbubble" shader="xu_distortion" blendmode="DISTORTION" preview="none" priority="2">
+        <properties>
+          <property type="BitMap" name="normal_map" value="assets\fx\textures\distortion_master_bump" />
+          <property type="Float" name="mat_strength" value="1360.0" />
+          <property type="Float" name="camera_fade_range_near_start" value="0.5" />
+          <property type="Float" name="camera_fade_range_near_end" value="18.0" />
+          <property type="Float" name="mat_mode" value="0.0" />
+        </properties>
+      </material>
+      <material name="psp_hw_warpdisc_distortion" shader="xu_distortion" blendmode="DISTORTION" preview="none" priority="2">
+        <properties>
+          <property type="BitMap" name="normal_map" value="assets\fx\textures\distortion_master_bump" />
+          <property type="Float" name="mat_strength" value="880.0" />
+          <property type="Float" name="camera_fade_range_near_start" value="0.5" />
+          <property type="Float" name="camera_fade_range_near_end" value="18.0" />
+          <property type="Float" name="mat_mode" value="0.0" />
+        </properties>
+      </material>
+      <material name="psp_hw_ring_glow" shader="p1_simple_unlit" blendmode="ADDITIVE" preview="none" priority="100">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="assets\textures\fx\fx_warpring_01_diff" />
+          <property type="Float" name="diffuseStr" value="0.03" />
+        </properties>
+      </material>
+      <material name="psp_singularity_lens_glow" shader="p1_complex_unlit_fresnel" blendmode="ADDITIVE_SINGLE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse2_map" value="assets\textures\fx\fx_p2_gradient_colour_01_diff" />
+          <property type="Float" name="diffuse2Str" value="1.8" />
+          <property type="Integer" name="dblend2" value="1" />
+          <property type="Float" name="base_brightness_shift" value="1.4" />
+          <property type="Float" name="base_saturation_shift" value="0.45" />
+          <property type="Float" name="base_hue_shift" value="0.0" />
+          <property type="Float" name="base_contrast_shift" value="1.0" />
+          <property type="Float" name="alphaStr" value="0.85" />
+          <property type="Float" name="alpha2Str" value="1.0" />
+          <property type="Float" name="camera_fade_range_near_start" value="0.5" />
+          <property type="Float" name="camera_fade_range_near_end" value="18.0" />
+          <property type="Float" name="camera_fade_range_far_start" value="100000.0" />
+          <property type="Float" name="camera_fade_range_far_end" value="120000.0" />
+          <property type="Float" name="softparticle_range_min" value="0.0" />
+          <property type="Float" name="softparticle_range_max" value="10.0" />
+          <property type="Color" name="color_emissive" r="180" g="230" b="255" a="255" value="(color 180 230 255)" />
+          <property type="Float" name="angle_fade_speed" value="-0.15" />
+          <property type="Float" name="angle_fade_offset" value="1.0" />
+          <property type="Float" name="fresnel_power" value="1.2" />
+          <property type="Float" name="fresnel_min" value="0.0" />
+          <property type="Float" name="fresnel_boost" value="11.0" />
+        </properties>
+      </material>
+      <material name="psp_singularity_swirl" shader="p1_complex_unlit" blendmode="ADDITIVE" preview="none">
+        <properties>
+          <property type="BitMap" name="diffuse_map" value="assets\fx\textures\beam_fx_01_diff" />
+          <property type="BitMap" name="diffuse2_map" value="assets\fx\textures\beam_fx_01_inverted_diff" />
+          <property type="BitMap" name="diffuse3_map" value="assets\fx\textures\beam_fx_01_diff" />
+          <property type="Float" name="diffuseStr" value="2.2" />
+          <property type="Float" name="diffuse2Str" value="2.6" />
+          <property type="Float" name="diffuse3Str" value="3.2" />
+          <property type="Integer" name="dblend1" value="3" />
+          <property type="Integer" name="dblend2" value="5" />
+          <property type="Color" name="color_emissive" r="120" g="205" b="255" a="255" value="(color 120 205 255)" />
+          <property type="Float" name="base_hue_shift" value="0.0" />
+          <property type="Float" name="base_saturation_shift" value="0.35" />
+          <property type="Float" name="base_brightness_shift" value="1.18" />
+          <property type="Float" name="angle_fade" value="0.0" />
+          <property type="Float" name="angle_fade_speed" value="0.0" />
+          <property type="Float" name="angle_fade_offset" value="0.0" />
+          <property type="Float" name="softparticle_range_min" value="0.0" />
+          <property type="Float" name="softparticle_range_max" value="0.1" />
+          <property type="Float" name="alpha1Str" value="1.0" />
+          <property type="Float" name="alpha2Str" value="1.0" />
+          <property type="Float" name="alpha3Str" value="1.0" />
+          <property type="Float" name="camera_fade_range_near_start" value="1.0" />
+          <property type="Float" name="camera_fade_range_near_end" value="5.0" />
+          <property type="Float" name="camera_fade_range_far_start" value="100000.0" />
+          <property type="Float" name="camera_fade_range_far_end" value="120000.0" />
+        </properties>
+      </material>
+  </add>
+</diff>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="terran_psp" name="Terran Point Singularity Projector" description="Adds a player-usable Terran L Point Singularity Projector turret." author="xen134" version="100" date="2026-05-24" save="1">
+  <dependency id="ego_dlc_terran" name="Cradle of Humanity" />
+</content>

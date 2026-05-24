@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="55">
+  <page id="20105" title="Equipment" descr="Weapon and turret names" voice="no">
+    <t id="9901">\033#text_warning#PSP\033X | Point Singularity Projector</t>
+    <t id="9902">\033#text_warning#PSP\033X | Long before the Jump Gate shutdown, the Point Singularity Projector occupied the severe end of Terran/ATF anti-capital doctrine: a weapon designed less to win exchanges than to end them. Most records of the programme disappeared during the restructuring that followed the end of the USC and the closing down of the ATF as an independent force. The surviving fragments were sealed away with other uncomfortable relics of the Terran Conflict.\n\nDuring the decades of isolation that followed the shutdown, Protectorate engineers quietly reopened the archive. What emerged was not an exact restoration, but a modern turret system that confines a miniature jump event long enough to hurl a collapsing singularity downrange. When containment fails, the release tears into shields and station plating at extreme range. Its cost, slow traverse, and punishing firing cycle keep it out of standard fleet doctrine; when a PSP is mounted, command expects a single decisive shot to matter.</t>
+    <t id="9903">PSP</t>
+  </page>
+</language>

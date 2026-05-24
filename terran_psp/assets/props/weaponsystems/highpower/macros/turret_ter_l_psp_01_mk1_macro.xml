@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="turret_ter_l_psp_01_mk1_macro" class="turret">
+    <component ref="turret_ter_l_psp_01_mk1" />
+    <properties>
+      <identification name="{20105,9901}" basename="{20105,9901}" shortname="{20105,9901}" makerrace="terran" description="{20105,9902}" mk="1" />
+      <bullet class="bullet_ter_l_psp_01_mk1_macro" />
+      <rotationspeed max="8" />
+      <rotationacceleration max="10" />
+      <hull max="4800" threshold="0.2" />
+      <effects>
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+      </effects>
+      <weapon angle="0.45" />
+    </properties>
+  </macro>
+</macros>
