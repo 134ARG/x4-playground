@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+	<add sel="/language">
+		<page id="999700" title="Super Phoenix" descr="Super Phoenix" voice="no">
+			<t id="1">史尔特尔</t>
+			<t id="2">(Surtr) {999700,4}</t>
+			<t id="3">史尔特尔是Terran参考Teladi凤凰级驱逐舰形制的改进版本，旨在最大化其对抗Xenon威胁的火力。该舰舍弃了典型驱逐舰的多功能性，专注于摧毁大型敌军目标。作为Terran对抗Xenon的进攻先锋，该舰装备的大量对舰重型武器与优秀的引擎布局使其在具有强大火力投射能力的同时能够在战场上进行快速的战术机动。</t>
+			<t id="4">史尔特尔</t>
+		</page>
+	</add>
+</diff>

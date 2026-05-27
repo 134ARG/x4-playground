@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<add sel = '/index' >
+		<entry name="super_phoenix" value="extensions\super_phoenix\assets\units\size_l\super_phoenix"/>
+	</add>
+</diff>

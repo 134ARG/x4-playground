@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/wares">
+    <ware id="super_phoenix_ware" name="{999700,4}" description="{999700,3}" group="ships_terran"
+      transport="ship" volume="1" tags="ship">
+      <price min="11080908" average="13045509" max="15010110" />
+      <production time="200" amount="1" method="default" name="{999700,4}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="308" />
+          <ware ware="energycells" amount="1123" />
+          <ware ware="metallicmicrolattice" amount="510" />
+        </primary>
+      </production>
+      <component ref="super_phoenix_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="terran" />
+    </ware>
+  </add>
+</diff>

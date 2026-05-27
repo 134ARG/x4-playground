@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+	<add sel="/language">
+		<page id="999700" title="Super Phoenix" descr="Super Phoenix" voice="no">
+			<t id="1">Super Pheonix</t>
+			<t id="2">(Super Phoenix) {999700,4}</t>
+			<t id="3">Super Phoenix is a Terran adaptation of the Teladi destroyer Phoenix, redesigned to maximize firepower against the Xenon threat. Specializing in direct combat, the Super Phoenix eschews the multi-role functionality of typical destroyers, focusing solely on the engagement and destruction of large enemy targets. Its upgraded arsenal and dedicated role as the spearhead of offensive operations allow it to deliver devastating blows, ensuring it plays a critical part in Terran strategies aimed at maintaining dominance over hostile AI entities.</t>
+			<t id="4">Super Phoenix</t>
+		</page>
+	</add>
+</diff>

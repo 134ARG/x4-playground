@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="super phoenix" name="Super Phoenix"
+    description="Adds the Super Phoenix Terran variant to the game" author="xen134" version="105"
+    date="2025-06-11" save="0" enabled="1">
+    <dependency id="ego_dlc_terran" optional="false" name="Cradle of Humanity"></dependency>
+</content>
