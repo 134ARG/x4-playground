@@ -1,1 +1,4 @@
 /x4-assets
+
+*.zip
+.DS_Store
