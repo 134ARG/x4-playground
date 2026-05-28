@@ -12,6 +12,7 @@
         </primary>
       </production>
       <component ref="turret_ter_l_psp_01_mk1_macro" />
+      <icon video="turret_ter_l_psp_01_mk1_macro" />
       <restriction licence="capitalequipment" />
       <use threshold="0" factions="player" />
       <owner faction="pioneers" />
