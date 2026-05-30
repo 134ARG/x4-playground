@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="super_katana" name="Super Katana" description="Improves the Terran Katana's turning, rotation, and lateral maneuvering with XML-only patches." author="xen134" version="100" date="2026-05-30" save="0">
+  <dependency id="ego_dlc_terran" optional="false" name="Cradle of Humanity" />
+</content>

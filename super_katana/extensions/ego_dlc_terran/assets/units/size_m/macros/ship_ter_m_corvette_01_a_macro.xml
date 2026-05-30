@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/jerk/strafe/@value">0.8</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/jerk/angular/@value">0.6</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/physics/inertia/@pitch">5</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/physics/inertia/@yaw">5</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/physics/inertia/@roll">3</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/physics/drag/@horizontal">7</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/physics/drag/@vertical">7</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/physics/drag/@pitch">6.6</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/physics/drag/@yaw">7.8</replace>
+  <replace sel="/macros/macro[@name='ship_ter_m_corvette_01_a_macro']/properties/physics/drag/@roll">7</replace>
+</diff>
