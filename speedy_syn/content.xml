@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="speedy_syn" name="Speedy Syn" description="Increases the Terran Syn's forward speed to 1.5x of its original value." author="xen134" version="100" date="2026-05-31" save="0">
+  <dependency id="ego_dlc_terran" optional="false" name="Cradle of Humanity" />
+</content>

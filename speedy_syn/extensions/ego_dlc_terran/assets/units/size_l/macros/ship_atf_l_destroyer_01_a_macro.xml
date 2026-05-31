@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='ship_atf_l_destroyer_01_a_macro']/properties/physics/drag/@forward">32</replace>
+</diff>
