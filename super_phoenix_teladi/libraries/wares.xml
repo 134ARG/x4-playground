@@ -12,6 +12,7 @@
       </production>
       <component ref="super_phoenix_teladi_macro" amount="1" />
       <restriction licence="capitalship" />
+      <owner faction="teladi" />
       <owner faction="ministry" />
     </ware>
   </add>
