@@ -367,7 +367,7 @@
 					</part>
 				</parts>
 			</connection>
-			<connection name="con_turret_laser_l" tags="turret large standard highpower component combat ">
+			<connection name="con_turret_laser_l" tags="turret large highpower component combat ">
 				<offset/>
 			</connection>
 			<connection name="con_aimtarget_01" tags="aimtarget ">
