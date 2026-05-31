@@ -3,7 +3,7 @@
   <add sel="/wares">
     <ware id="super_phoenix_ware" name="{999700,4}" description="{999700,3}" group="ships_terran"
       transport="ship" volume="1" tags="ship">
-      <price min="11080908" average="13045509" max="15010110" />
+      <price min="20000000" average="22500000" max="25000000" />
       <production time="200" amount="1" method="default" name="{999700,4}">
         <primary>
           <ware ware="computronicsubstrate" amount="308" />

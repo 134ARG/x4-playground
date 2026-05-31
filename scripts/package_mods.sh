@@ -57,7 +57,7 @@ for content_xml in ./*/content.xml; do
   rm -f "$zip_path"
   (
     cd "$(dirname "$package_dir")"
-    zip -qr -X "$zip_path" "$mod_name"
+    zip -qr -X "$zip_path" "$mod_name" -x '*/.DS_Store'
   )
 
   count=$((count + 1))
