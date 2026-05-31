@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <add sel="/language">
+    <page id="999701" title="Super Phoenix Teladi" descr="Super Phoenix Teladi" voice="no">
+      <t id="1">Super Phoenix</t>
+      <t id="2">(Super Phoenix) {999701,4}</t>
+      <t id="3">The Super Phoenix Teladi variant keeps the renewed Phoenix E combat refit while using Teladi identity, licensing, and production configuration.</t>
+      <t id="4">Super Phoenix</t>
+    </page>
+  </add>
+</diff>

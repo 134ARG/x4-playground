@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <add sel="/language">
+    <page id="999701" title="Super Phoenix Teladi" descr="Super Phoenix Teladi" voice="no">
+      <t id="1">超级凤凰</t>
+      <t id="2">(超级凤凰) {999701,4}</t>
+      <t id="3">Teladi版超级凤凰保留了新版Phoenix E战斗改装，同时使用Teladi身份、许可和生产配置。</t>
+      <t id="4">超级凤凰</t>
+    </page>
+  </add>
+</diff>

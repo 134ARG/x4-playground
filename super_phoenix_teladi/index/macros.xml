@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/index">
+    <entry name="super_phoenix_teladi_macro" value="extensions\super_phoenix_teladi\assets\units\size_l\macros\super_phoenix_teladi_macro" />
+    <entry name="storage_super_phoenix_teladi_macro" value="extensions\super_phoenix_teladi\assets\units\size_l\macros\storage_super_phoenix_teladi_macro" />
+  </add>
+</diff>
