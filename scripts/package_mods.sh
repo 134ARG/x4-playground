@@ -24,6 +24,7 @@ stage_super_phoenix_teladi() {
   sed \
     -e 's/<component name="super_phoenix"/<component name="super_phoenix_teladi"/' \
     -e 's#extensions\\super_phoenix\\assets\\units\\size_l\\super_phoenix_data#extensions\\super_phoenix_teladi\\assets\\units\\size_l\\super_phoenix_teladi_data#' \
+    -e 's/large ter_destroyer_01 weapon /large tel_destroyer_01 weapon /g' \
     "super_phoenix/assets/units/size_l/super_phoenix.xml" \
     > "$staged_mod_dir/assets/units/size_l/super_phoenix_teladi.xml"
 
